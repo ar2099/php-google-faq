@@ -39,6 +39,17 @@ $faqs = [
 var_dump($faqs)
 ?>
 <body>
-    
+
+<?php
+
+foreach( $faqs as $key => $faq){
+
+  if( $key == 0 ){
+      echo "<p>" . $faq["question"] . " - " . $faq["answer"] . "</p>";
+  }
+  
+};
+?>
+
 </body>
 </html>
